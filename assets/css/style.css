@@ -74,11 +74,12 @@
     
 }
 #Sprinter img{
-    width: 75px;
-    padding-left: 45px;
+    width: 60px;
+    padding-top: 10px;
 }
 
 #Sprinter{
-margin-left: 340px;
-
+    font-size: 30px;
+    margin-left: 300px;
+    -webkit-text-fill-color: #0006a0;
 }
