@@ -83,3 +83,37 @@
     margin-left: 300px;
     -webkit-text-fill-color: #0006a0;
 }
+
+#spoornr{
+  font-size: 48px;  
+  margin-left: 40px;
+  margin-top: 25px;
+  font-weight: bolder;
+}
+
+#minuten{
+    font-size: 30px;
+    margin-top: -40px; 
+    margin-left: 5px;
+    -webkit-text-fill-color: #0006a0;    
+}
+
+#stad{
+    font-size: 30px; 
+    margin-top: 10px; 
+    margin-left: 5px;
+    font-weight: bolder;
+    -webkit-text-fill-color: #0006a0; 
+}
+
+#stations{
+    font-size: 20px; 
+}
+#clock {
+    height: 50px;
+    width: 40px;
+    color: #36248a;
+    font-size: 20px;
+    margin-top:10px;
+    margin-left: 50px;
+}

@@ -10,11 +10,19 @@
     <div id="container">
         <div id="left">
            <div id ="klok"> </div>
+           <div id="clock"> </div>
         </div>
         <div id="middle">
            <div id="thynehoudtvanfemboysvierkantje">
             <div id="Sprinter"> Sprinter <img src="assets/img/ns_logo.png"></div>
-           </div>
+          <div id="minuten">1 minuut</div>
+          <div id="stad">Utrecht Centraal
+            <div id="stations">
+               Via Utrecht Lunetten, Utrecht Vaartrijn, Utrecht centraal
+            </div>
+          </div>
+        
+        </div>
            
            <div id="onderzijdebalk"></div>
         </div>
@@ -23,9 +31,24 @@
             
                 <div id="kleinblauwvierkantje"></div>
                 <div id="Spoor">Spoor</div>
+                <div id="spoornr">1</div>
 
             </div>
         </div>
+<script>
+    let clock = () => {
+  let date = new Date();
+  let hrs = date.getHours();
+  let mins = date.getMinutes();
+  let secs = date.getSeconds();
+  let time = `${hrs}:${mins}:${secs}`
+  document.getElementById("clock").innerText = time
+  setTimeout(clock, 1000);
+  console.log(time)
+}
 
-        </body>
+clock();
+</script>
+
+ </body>
 </html>
