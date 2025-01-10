@@ -9,19 +9,20 @@
 <body>
     <div id="container">
         <div id="left">
-           <div id ="klok"> </div>
+           <!-- <div id ="plok"> </div> -->
            <div id="clock"> </div>
+           <div id="klok"> <img src="assets/img/dit moest van hanna.png"></div>
         </div>
         <div id="middle">
-           <div id="thynehoudtvanfemboysvierkantje">
-            <div id="Sprinter"> Sprinter <img src="assets/img/ns_logo.png"></div>
+          <div id="thynehoudtvanfemboysvierkantje">
+          <div id="Sprinter"> Sprinter <img src="assets/img/ns_logo.png"></div>
           <div id="minuten">1 minuut</div>
           <div id="stad">Utrecht Centraal
-            <div id="stations">
+          <div id="stations">
                Via Utrecht Lunetten, Utrecht Vaartrijn, Utrecht centraal
-            </div>
           </div>
-        
+        </div>
+        <div id="next">Hierna/next 08:54 Sprinter Leiden centraal</div>
         </div>
            
            <div id="onderzijdebalk"></div>
@@ -36,6 +37,22 @@
             </div>
         </div>
 <script>
+  
+const interval=setInterval(function(){ 
+        if (document.getElementById("minuten").innerHTML=='1 minuut')
+        {
+            const now = new Date ();
+            const hours =String(now.getHours()).padStart(2,'0');
+            const minutes = String(now.getHours()).padStart(2,'0');
+            document.getElementById('minuten').innerHTML= hours +':'+minutes;
+
+        }
+        else
+        {
+            document.getElementById("minuten").innerHTML="1 minuut";
+
+        }
+    },5000);
     let clock = () => {
   let date = new Date();
   let hrs = date.getHours();
@@ -48,6 +65,7 @@
 }
 
 clock();
+
 </script>
 
  </body>

@@ -8,7 +8,7 @@
 
 #left{
     width: 240px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     height: 335px;
     border: 2px solid #000;
 }
@@ -44,6 +44,7 @@
     margin-left: 0px; 
     margin-top: -96px;
 }
+ 
 #thynehoudtvanfemboysvierkantje{
     width: 480px;
     height:240px;
@@ -57,15 +58,15 @@
     background-color: #1c1747;
     border: 2px solid #000;
 }
-#klok{
+/* #plok{
     width:195px;
     height:195px;
     background-color: #ffffff;
     border-radius: 100% ;
     border: 2px solid #000;
     margin-top: 20px;
-    margin-left: 20px;
-}
+    margin-left: 20px; */
+/* } */
 #Spoor{
     text-align: center;
     font-weight: bolder;
@@ -113,7 +114,21 @@
     height: 50px;
     width: 40px;
     color: #36248a;
-    font-size: 20px;
+    font-size: 40px;
     margin-top:10px;
-    margin-left: 50px;
+    margin-left: 55px;
+    font-weight: bolder;
+}
+
+#next{
+    margin-top: 115px;
+    margin-left: 2px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+#klok img {
+    width: 200px;
+    padding-top: -1px;
+    padding-left: 17px;
 }
